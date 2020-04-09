@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/pace.min.js"></script>
+        <title>Clay Viewer</title>
+        <link rel="stylesheet" href="css/controlKit.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/iconfont/iconfont.css">
+        <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.css">
+        <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="viewport"></div>
+            <div style="visibility:hidden" id="tip">
+                <div class="hint">
+
+                </div>
+
+            </div>
+
+            <div id="timeline">
+                <div id="timeline-range-wrap" style="display:none;">
+                    <div id="timeline-range">
+                        <input>
+                    </div>
+                </div>
+                <div id="timeline-progress-wrap">
+                    <div id="timeline-progress">
+                        <input>
+                    </div>
+                    <div id="timeline-pause-resume" class="iconfont icon-resume"></div>
+                </div>
+                <div style="margin:15px;color:white">
+                    <div style="margin-bottom:5px">OxyGEN-IP Emergency Mechanical ventilator</div>
+                    Click + drag to rotate camera. Mouse wheel click + drag to move camera
+                </div>
+            </div>
+            <div id="background-progress">
+                <div id="background-progress-text"></div>
+                <div class="spinner"></div>
+            </div>
+        </div>
+        <div id="loading">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+            <div id="loading-text">LOADING</div>
+        </div>
+        <div id="toolbar">
+            <span class="iconfont icon-download" id="download" title="Download"></span>
+            <span class="iconfont icon-reset" id="reset" title="Reset"></span>
+        </div>
+        <script src="lib/controlKit.js"></script>
+        <script src="lib/FileAPI.js"></script>
+        <script src="lib/FileSaver.js"></script>
+        <script src="lib/sweetalert.min.js"></script>
+        <script src="lib/jszip.min.js"></script>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/ion.rangeSlider.js"></script>
+        <script src="lib/browserfs.min.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+    </html>
