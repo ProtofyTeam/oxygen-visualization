@@ -7413,7 +7413,8 @@
             camera: this._renderMain.camera
         }), this._clickHandler = this._clickHandler.bind(this), this._mouseDownHandler = this._mouseDownHandler.bind(this), this.root.addEventListener("mousedown", this._mouseDownHandler), this.root.addEventListener("click", this._clickHandler)
     }, a.prototype._mouseDownHandler = function(e) {
-        this._startX = e.clientX, this._startY = e.clientY
+        this._startX = e.clientX, this._startY = e.clientY;
+        return false;
     }, a.prototype._clickHandler = function(e) {
         return;
         if (this._enablePicking || this._renderMain.isDOFEnabled()) {
